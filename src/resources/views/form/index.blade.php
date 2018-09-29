@@ -9,10 +9,9 @@
 
                 <div class="card-body">
                     @if ($infoMessage)
-                        <div class="row">
-                            <div class="col-md-6">
-                                {{$infoMessage}}
-                            </div>
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            {{$infoMessage}}
                         </div>
                     @endif
                     <form method="POST">
